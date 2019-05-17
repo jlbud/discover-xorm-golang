@@ -16,6 +16,7 @@ type User struct {
 }
 
 // 插入一行
+// 同时返回插入行的id
 func TestInsert_One(t *testing.T) {
 	u := &User{}
 	u.Name = "yang"
