@@ -5,7 +5,7 @@ import (
 )
 
 type Base struct {
-	Id int `xorm:"pk autoincr 'id'" json:"-"`
+    Id int `xorm:"pk autoincr 'id'" json:"-"`
 }
 
 // 样例库
