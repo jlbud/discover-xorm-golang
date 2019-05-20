@@ -4,13 +4,9 @@ import (
 	"testing"
 )
 
-type Base struct {
-	Id int `xorm:"pk autoincr 'id'" json:"-"`
-}
-
 // 样例库的DTO(Data Transfer Object)
 type User struct {
-	Base  `xorm:"extends"`
+	Id int `xorm:"pk autoincr 'id'" json:"-"`
 	Name  string `json:"name"`
 	Phone string `json:"phone"`
 }

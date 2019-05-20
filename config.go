@@ -11,7 +11,7 @@ var Engine *xorm.Engine
 
 func init() {
 	var err error
-	Engine, err = xorm.NewEngine("mysql", "root:12345678@tcp(localhost:3306)/test?charset=utf8")
+	Engine, err = xorm.NewEngine("mysql", "root:12345678@tcp(localhost:3306)/lucky_day?charset=utf8")
 	if err != nil {
 		panic(fmt.Sprintf("init xorm err: %s", err))
 	}
